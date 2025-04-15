@@ -22,7 +22,13 @@ window.addEventListener("DOMContentLoaded", () => {
             <td>${age}</td>
             <td>${height}</td>
             <td>${weight}</td>
+            <td><button class="deleteBtn">Törlés</button></td>
         `;
+
+        // törlés
+        row.querySelector(".deleteBtn").addEventListener("click", function () {
+            row.remove();
+        });
 
         // Sor hozzáadása a táblázathoz
         tableBody.appendChild(row);
