@@ -12,3 +12,4 @@ Alpha
 1.4a - Táblázat szerkesztési lehetőség hozzáadva
 1.5a - Táblázatból törlési lehetőség hozzáadva
 1.6a - Táblázatban keresési lehetőség hozzáadva
+1.7a - Táblázat rendezési lehetőség hozzáadva
