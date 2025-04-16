@@ -1,0 +1,16 @@
+#html5Menu {
+    padding: 10px;
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#html5Menu button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+#html5Menu button:hover {
+    background: #dceffd;
+}

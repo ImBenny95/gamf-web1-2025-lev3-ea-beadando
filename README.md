@@ -14,3 +14,4 @@ Changelog:
 - 1.5a – Táblázatból törlési lehetőség hozzáadva  
 - 1.6a – Táblázatban keresési lehetőség hozzáadva  
 - 1.7a – Táblázat rendezési lehetőség hozzáadva
+- 2.0a – HTML5 funkciók hozzáadva (Web Storage, Geolocation) - GeoLocation csak localhoston vagy https-en!

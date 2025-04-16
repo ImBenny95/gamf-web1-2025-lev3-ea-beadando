@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 API-k | WEB-programozás I. - Előadás beadandó feladat</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/html5.css">
 </head>
 <body>
     <header>
@@ -31,11 +32,27 @@
         <button data-target="sse">Server-Sent Events</button>
     </aside>
     <div id="content">
-        <h2>asdasdasd</h2>
+        <h2>HTML5 API példák</h2>
+
+        <section id="localstorage" class="apiSection">
+            <h3>Web Storage (LocalStorage)</h3>
+            <input type="text" id="storageInput" placeholder="Írj be valamit...">
+            <button id="saveBtn">Mentés</button>
+            <p id="savedText"></p>
+        </section>
+    
+        <section id="geolocation" class="apiSection" style="display: none;">
+            <h3>Geolocation API</h3>
+            <button id="geoBtn">Helyzet lekérése</button>
+            <p id="geoResult">Helyzet: ...</p>
+        </section>
+    
+        <!-- ide jön majd: canvas, dragdrop, stb. -->
     </div>
     <footer>
         <p>&copy; 2023 WEB-programozás I. - Előadás beadandó feladat</p>
         <p>Weboldal készítette: Pál Bence</p>
     </footer>
+    <script src="js/html5.js"></script>
 </body>
 </html>
