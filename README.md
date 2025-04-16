@@ -19,3 +19,4 @@ Changelog:
 - 2.2a - HTML5 funkció hozzáadva: Drag & Drop
 - 2.3a - HTML5 funkció hozzáadva: SVG
 - 2.4a - HTML5 funkció hozzáadva: Worker
+- 2.5a - HTML5 funkció hozzáadva: Server-Sent Events - NodeJS szükséges!!!!
