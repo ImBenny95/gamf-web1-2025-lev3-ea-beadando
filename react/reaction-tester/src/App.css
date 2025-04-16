@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #222;
+  padding: 2rem;
+}
+
+.App p {
+  font-size: 1.2rem;
+}
