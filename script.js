@@ -68,4 +68,19 @@ window.addEventListener("DOMContentLoaded", () => {
         // Mezők ürítése
         form.reset();
     });
+
+    // Keresés megvalósítása (nem az űrlapon belül!)
+    document.getElementById("searchInput").addEventListener("input", function () {
+        const keresett = this.value.toLowerCase();
+        const sorok = tableBody.querySelectorAll("tr");
+
+        sorok.forEach(row => {
+            const szoveg = row.textContent.toLowerCase();
+            if (szoveg.includes(keresett)) {
+                row.style.display = ""; // megjelenítjük
+            } else {
+                row.style.display = "none"; // elrejtjük
+            }
+        });
+    });
 });
