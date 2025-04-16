@@ -18,3 +18,4 @@ Changelog:
 - 2.1a - HTML5 funkció hozzáadva: Canvas
 - 2.2a - HTML5 funkció hozzáadva: Drag & Drop
 - 2.3a - HTML5 funkció hozzáadva: SVG
+- 2.4a - HTML5 funkció hozzáadva: Worker

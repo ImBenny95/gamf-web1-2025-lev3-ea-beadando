@@ -71,6 +71,14 @@
             </svg>
             <p>Kattints az SVG területre új kör létrehozásához!</p>
         </section>
+
+        <section id="worker" class="apiSection" style="display: none;">
+            <h3>Web Worker példa</h3>
+            <label for="numberInput">Add meg, hány szám összegét szeretnéd kiszámolni:</label>
+            <input type="number" id="numberInput" value="10" min="1">
+            <button id="startBtn">Számolás indítása</button>
+            <p id="workerResult">Összeg: ...</p>
+        </section>             
     
         <!-- ide jön majd: a többi funkció -->
     </div>
@@ -84,6 +92,7 @@
     <script src="js/html5/canvas.js"></script>
     <script src="js/html5/dragdrop.js"></script>
     <script src="js/html5/svg.js"></script>
+    <script src="js/html5/workerapi.js"></script>
 
 </body>
 </html>
