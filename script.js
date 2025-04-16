@@ -83,4 +83,37 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+    
+    // Rendezés megvalósítása
+    let rendezesAllapot = {}; // oszlopindex → növekvő/csökkenő
+
+    document.querySelectorAll(".sortable").forEach(header => {
+        header.addEventListener("click", () => {
+            const oszlopIndex = parseInt(header.dataset.index);
+            const sorok = Array.from(tableBody.querySelectorAll("tr"));
+
+            // Rendezés iránya váltogatva
+            const novekvo = !rendezesAllapot[oszlopIndex];
+            rendezesAllapot[oszlopIndex] = novekvo;
+
+            sorok.sort((a, b) => {
+                const aSzoveg = a.cells[oszlopIndex].textContent.toLowerCase();
+                const bSzoveg = b.cells[oszlopIndex].textContent.toLowerCase();
+
+                const aSzam = parseFloat(aSzoveg);
+                const bSzam = parseFloat(bSzoveg);
+
+                // Számként rendezzük, ha lehet, különben szövegként
+                const eredmeny = (!isNaN(aSzam) && !isNaN(bSzam))
+                    ? aSzam - bSzam
+                    : aSzoveg.localeCompare(bSzoveg);
+
+                return novekvo ? eredmeny : -eredmeny;
+            });
+
+            // Töröljük a korábbi sorokat és újrarendereljük
+            tableBody.innerHTML = "";
+            sorok.forEach(sor => tableBody.appendChild(sor));
+        });
+    });
 });
