@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX példa | WEB-programozás I.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>WEB-programozás I. - Előadás beadandó feladat</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="tabla.html">Táblázat</a></li>
+            <li><a href="html5.html">HTML5 API</a></li>
+            <li><a href="chart.html">ChartJS</a></li>
+            <li class="active"><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react.html">React</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <h2>AJAX API kapcsolódás – CRUD</h2>
+
+        <!-- Kód bekérő -->
+        <label for="codeInput">Add meg a saját azonosító kódod:</label>
+        <input type="text" id="codeInput" placeholder="NEPTUN">
+        <button id="authBtn">Kód megerősítése</button>
+
+        <!-- Üzenetek -->
+        <p id="msg" style="color: red;"></p>
+
+        <!-- Create / Update form -->
+        <form id="form">
+            <label for="name">Név:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="height">Magasság (cm):</label>
+            <input type="number" id="height" required><br>
+
+            <label for="weight">Súly (kg):</label>
+            <input type="number" id="weight" required><br>
+
+            <button type="submit">Hozzáadás (Create)</button>
+        </form>
+
+        <hr>
+
+        <!-- ID megadása Update/Delete művelethez -->
+        <label for="updateId">ID:</label>
+        <input type="text" id="updateId" placeholder="Pl. 123"><br>
+
+        <button id="getDataBtn">Adatok betöltése ID alapján</button>
+        <button id="updateBtn">Módosítás (Update)</button>
+        <button id="deleteBtn">Törlés (Delete)</button>
+
+        <hr>
+
+        <div id="list">
+            <h3>📄 Lekért adatok:</h3>
+            <!-- Read válasz ide kerül -->
+        </div>
+
+        <div id="stats">
+            <h3>📊 Statisztika:</h3>
+            <!-- Height összeg, átlag, max ide kerül -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WEB-programozás I. - Előadás beadandó feladat</p>
+        <p>Weboldal készítette: Pál Bence</p>
+    </footer>
+
+    <script src="js/ajax.js"></script>
+</body>
+</html>

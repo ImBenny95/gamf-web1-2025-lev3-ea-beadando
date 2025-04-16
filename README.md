@@ -21,3 +21,4 @@ Changelog:
 - 2.4a - HTML5 funkció hozzáadva: Worker
 - 2.5a - HTML5 funkció hozzáadva: Server-Sent Events - NodeJS szükséges!!!!
 - 3.0a - ChartJS demo hozzáadva
+- 4.0a - AJAX demo hozzáadva - Érvényes NEPTUN kód szükséges a tanár szerverén!!
