@@ -16,4 +16,5 @@ Changelog:
 - 1.7a – Táblázat rendezési lehetőség hozzáadva
 - 2.0a – HTML5 funkciók hozzáadva (Web Storage, Geolocation) - GeoLocation csak localhoston vagy https-en!
 - 2.1a - HTML5 funkció hozzáadva: Canvas
-- 2.1a - HTML5 funkció hozzáadva: Drag & Drop
+- 2.2a - HTML5 funkció hozzáadva: Drag & Drop
+- 2.3a - HTML5 funkció hozzáadva: SVG
