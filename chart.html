@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS példa | WEB-programozás I. - Előadás beadandó feladat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>WEB-programozás I. - Előadás beadandó feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="tabla.html">Táblázat</a></li>
+            <li><a href="html5.html">HTML5 API</a></li>
+            <li class="active"><a href="chart.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react.html">React</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <h2>ChartJS példa – táblázatból diagram</h2>
+
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>Adat 1</th>
+                    <th>Adat 2</th>
+                    <th>Adat 3</th>
+                    <th>Adat 4</th>
+                    <th>Adat 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>5</td><td>20</td><td>13</td><td>7</td><td>18</td></tr>
+                <tr><td>12</td><td>15</td><td>9</td><td>14</td><td>10</td></tr>
+                <tr><td>3</td><td>9</td><td>2</td><td>17</td><td>11</td></tr>
+                <tr><td>22</td><td>17</td><td>5</td><td>8</td><td>4</td></tr>
+                <tr><td>1</td><td>4</td><td>25</td><td>10</td><td>7</td></tr>
+            </tbody>
+        </table>
+
+        <canvas id="chartCanvas" width="400" height="200"></canvas>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WEB-programozás I. - Előadás beadandó feladat</p>
+        <p>Weboldal készítette: Pál Bence</p>
+    </footer>
+
+    <!-- ChartJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
