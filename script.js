@@ -1,4 +1,3 @@
-// Várunk, míg az oldal teljesen betöltődik
 window.addEventListener("DOMContentLoaded", () => {
     console.log("script.js betöltve");
     const form = document.getElementById("addForm");
@@ -22,15 +21,26 @@ window.addEventListener("DOMContentLoaded", () => {
             <td>${age}</td>
             <td>${height}</td>
             <td>${weight}</td>
-            <td><button class="deleteBtn">Törlés</button></td>
+            <td>
+                <button class="editBtn">Szerkesztés</button>
+                <button class="deleteBtn">Törlés</button>
+            </td>
         `;
 
-        // törlés
+        // Törlés gomb
         row.querySelector(".deleteBtn").addEventListener("click", function () {
             row.remove();
         });
 
-        // Sor hozzáadása a táblázathoz
+        // Szerkesztés gomb
+        row.querySelector(".editBtn").addEventListener("click", function () {
+            document.getElementById("name").value = name;
+            document.getElementById("age").value = age;
+            document.getElementById("height").value = height;
+            document.getElementById("weight").value = weight;
+        });
+
+        // Sor hozzáadása
         tableBody.appendChild(row);
 
         // Mezők ürítése
