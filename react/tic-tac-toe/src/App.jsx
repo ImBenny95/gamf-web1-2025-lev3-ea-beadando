@@ -3,7 +3,7 @@ import './App.css';
 
 function Square({ value, onClick }) {
   return (
-    <button className="square" onClick={onClick}>
+    <button className={`square ${value ?? ''}`} onClick={onClick}>
       {value}
     </button>
   );
@@ -49,9 +49,9 @@ function App() {
 // Győztes meghatározása
 function calculateWinner(squares) {
   const lines = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], // sorok
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], // oszlopok
-    [0, 4, 8], [2, 4, 6],           // átlók
+    [0, 1, 2], [3, 4, 5], [6, 7, 8],
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],
+    [0, 4, 8], [2, 4, 6],
   ];
 
   for (let [a, b, c] of lines) {
