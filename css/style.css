@@ -1,30 +1,49 @@
-/* Középre igazítás */
-body {
-    font-family: Arial, sans-serif;
+/* Általános alapbeállítás: törlés, magasság fix */
+html, body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100%;
+    background-color: #181818;
+    font-family: Arial, sans-serif;
+    color: #ccc;
 }
 
-/* Fejléc és lábléc stílusok */
+/* Háttér konténer */
+.background-container {
+    height: 100%;
+    background-image: url(../images/background_self.png);
+    background-repeat: repeat-y;
+    background-position-x: calc(50% + 5px); /* ← Fejlesztői megjegyzés: ez igazítja a középre az oldalt a háttér mintájához */
+    background-position-y: top;
+    background-attachment: fixed;
+    background-color: #181818;
+}
+
+
+/* Középre igazított tartalom */
+.site-wrapper {
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Fejléc és lábléc */
 header, footer {
     background-color: #003366;
     color: white;
-    width: 100%;
     text-align: center;
     padding: 1rem;
 }
 
-/* Navigációs menü stílusok */
+/* Navigáció */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #006699;
-    padding: 0;
+    background-color: #242424;
     margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -39,31 +58,20 @@ nav a {
     text-decoration: none;
 }
 
-nav li.active a {
-    background-color: #004466;
-}
-
+nav li.active a,
 nav a:hover {
-    background-color: #005580;
+    background-color: #1D7CA2;
 }
 
-/* Fő tartalom és oldalsáv stílusa */
-aside {
-    padding: 1rem;
-    background-color: #f0f0f0;
-    width: 100%;
-    max-width: 800px;
+/* Tartalmi szakaszok */
+aside, #content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 2rem;
+    color: #ccc;
+    box-sizing: border-box;
 }
 
-#content {
-    padding: 2rem;
-    width: 100%;
-    max-width: 800px;
+/* Lábléc margó */
+footer {
+    margin-top: 2rem;
 }
-
-/* Oldal területének meghatározása */
-body > * {
-    max-width: 800px;
-    width: 100%;
-}
-

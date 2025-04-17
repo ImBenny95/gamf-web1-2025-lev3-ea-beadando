@@ -27,3 +27,7 @@ Changelog:
 - 7.0a - Tic-Tac-Toe minijáték hozzáadva React-hoz
 
 Az oldal minden funkciót megkapott, kezdődhet az teljeskörű Alpha teszt!
+
+**Beta**
+
+- 1.0b - Az oldal teljesen megújult megjelenést kapott

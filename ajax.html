@@ -6,75 +6,71 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>WEB-programozás I. - Előadás beadandó feladat</h1>
-    </header>
+    <div class="background-container">
+        <div class="site-wrapper">
+            <header>
+                <h1>WEB-programozás I. - Előadás beadandó feladat</h1>
+            </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Kezdőlap</a></li>
-            <li><a href="tabla.html">Táblázat</a></li>
-            <li><a href="html5.html">HTML5 API</a></li>
-            <li><a href="chart.html">ChartJS</a></li>
-            <li class="active"><a href="ajax.html">AJAX</a></li>
-            <li><a href="oojs.html">OOJS</a></li>
-            <li><a href="react.html">React</a></li>
-        </ul>
-    </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="tabla.html">Táblázat</a></li>
+                    <li><a href="html5.html">HTML5 API</a></li>
+                    <li><a href="chart.html">ChartJS</a></li>
+                    <li class="active"><a href="ajax.html">AJAX</a></li>
+                    <li><a href="oojs.html">OOJS</a></li>
+                    <li><a href="react.html">React</a></li>
+                </ul>
+            </nav>
 
-    <div id="content">
-        <h2>AJAX API kapcsolódás – CRUD</h2>
+            <div id="content">
+                <h2>AJAX API kapcsolódás – CRUD</h2>
 
-        <!-- Kód bekérő -->
-        <label for="codeInput">Add meg a saját azonosító kódod:</label>
-        <input type="text" id="codeInput" placeholder="NEPTUN + pár karakteres egyéni kód">
-        <button id="authBtn">Kód megerősítése</button>
+                <label for="codeInput">Add meg a saját azonosító kódod:</label>
+                <input type="text" id="codeInput" placeholder="NEPTUN + pár karakteres egyéni kód">
+                <button id="authBtn">Kód megerősítése</button>
+                <p id="msg" style="color: red;"></p>
 
-        <!-- Üzenetek -->
-        <p id="msg" style="color: red;"></p>
+                <form id="form">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" required><br>
 
-        <!-- Create / Update form -->
-        <form id="form">
-            <label for="name">Név:</label>
-            <input type="text" id="name" required><br>
+                    <label for="height">Magasság (cm):</label>
+                    <input type="number" id="height" required><br>
 
-            <label for="height">Magasság (cm):</label>
-            <input type="number" id="height" required><br>
+                    <label for="weight">Súly (kg):</label>
+                    <input type="number" id="weight" required><br>
 
-            <label for="weight">Súly (kg):</label>
-            <input type="number" id="weight" required><br>
+                    <button type="submit">Hozzáadás (Create)</button>
+                </form>
 
-            <button type="submit">Hozzáadás (Create)</button>
-        </form>
+                <hr>
 
-        <hr>
+                <label for="updateId">ID:</label>
+                <input type="text" id="updateId" placeholder="Pl. 123"><br>
 
-        <!-- ID megadása Update/Delete művelethez -->
-        <label for="updateId">ID:</label>
-        <input type="text" id="updateId" placeholder="Pl. 123"><br>
+                <button id="getDataBtn">Adatok betöltése ID alapján</button>
+                <button id="updateBtn">Módosítás (Update)</button>
+                <button id="deleteBtn">Törlés (Delete)</button>
 
-        <button id="getDataBtn">Adatok betöltése ID alapján</button>
-        <button id="updateBtn">Módosítás (Update)</button>
-        <button id="deleteBtn">Törlés (Delete)</button>
+                <hr>
 
-        <hr>
+                <div id="list">
+                    <h3>📄 Lekért adatok:</h3>
+                </div>
 
-        <div id="list">
-            <h3>📄 Lekért adatok:</h3>
-            <!-- Read válasz ide kerül -->
-        </div>
+                <div id="stats">
+                    <h3>📊 Statisztika:</h3>
+                </div>
+            </div>
 
-        <div id="stats">
-            <h3>📊 Statisztika:</h3>
-            <!-- Height összeg, átlag, max ide kerül -->
+            <footer>
+                <p>&copy; 2025 WEB-programozás I. - Előadás beadandó feladat</p>
+                <p>Weboldal készítette: Pál Bence</p>
+            </footer>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 WEB-programozás I. - Előadás beadandó feladat</p>
-        <p>Weboldal készítette: Pál Bence</p>
-    </footer>
-
     <script src="js/ajax.js"></script>
 </body>
 </html>
