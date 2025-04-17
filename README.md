@@ -26,4 +26,4 @@ Changelog:
 - 6.0a - Első React minijáték hozzáadva React-hoz
 - 7.0a - Tic-Tac-Toe minijáték hozzáadva React-hoz
 
-Az oldal minden funkciót megkapott, kezdődhet az teleskörű Alpha teszt!
+Az oldal minden funkciót megkapott, kezdődhet az teljeskörű Alpha teszt!
