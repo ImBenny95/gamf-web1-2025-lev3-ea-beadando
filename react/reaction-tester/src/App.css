@@ -1,10 +1,43 @@
+/* Teljes képernyő, fehér háttér, nincs margó vagy padding */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+/* Ne legyen árnyék, ne legyen háttér a teljes appon */
 .App {
-  text-align: center;
   font-family: Arial, sans-serif;
-  color: #222;
-  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .App p {
   font-size: 1.2rem;
+}
+
+/* Reakció doboz */
+.reaction-box {
+  background-color: red;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
