@@ -10,12 +10,12 @@ html, body {
 
 /* Háttér konténer */
 .background-container {
-    height: 100%;
-    background-image: url(../images/background_self.png);
+    min-height: 100vh; /* Legalább teljes képernyő, de tartalomhoz is igazodik */
+    background-image: url(../images/background-page.png);
     background-repeat: repeat-y;
-    background-position-x: calc(50% + 5px); /* ← Fejlesztői megjegyzés: ez igazítja a középre az oldalt a háttér mintájához */
+    background-position-x: calc(50% + 5px); /* Háttér igazítása */
     background-position-y: top;
-    background-attachment: fixed;
+    background-attachment: scroll; /* scroll jobban kezeli a hosszú oldalt */
     background-color: #181818;
 }
 
@@ -28,12 +28,35 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Fejléc és lábléc */
-header, footer {
-    background-color: #003366;
+/* Fejléc – háttérkép, fehér szöveg árnyékkal */
+header {
+    background-image: url(../images/background-header.jpg); /* <-- Fejléc kép helye */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
+    padding: 3rem 1rem; /* ↑ Megnövelt belső tér, magasság növelése */
+    min-height: 180px;  /* ↑ Minimális magasság, ha kell fix méret */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 6px #000;
+}
+
+/* Lábléc – átlátszó háttér, ciánkék szöveg */
+footer {
+    background-color: transparent;
+    color: #1be5fd;
+    text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 /* Navigáció */
@@ -69,9 +92,4 @@ aside, #content {
     padding: 1.5rem 2rem;
     color: #ccc;
     box-sizing: border-box;
-}
-
-/* Lábléc margó */
-footer {
-    margin-top: 2rem;
 }

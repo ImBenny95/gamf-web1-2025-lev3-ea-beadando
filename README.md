@@ -21,7 +21,7 @@ Changelog:
 - 2.4a - HTML5 funkció hozzáadva: Worker
 - 2.5a - HTML5 funkció hozzáadva: Server-Sent Events - NodeJS szükséges!!!!
 - 3.0a - ChartJS demo hozzáadva
-- 4.0a - AJAX demo hozzáadva - Érvényes NEPTUN kód szükséges a tanár szerverén!!
+- 4.0a - AJAX demo hozzáadva - Kiszolgáló: http://gamf.nhely.hu/ajax2/
 - 5.0a - Objektum orientált Java alkalmazás hozzáadva - Kő Papír Olló minijáték :)
 - 6.0a - Első React minijáték hozzáadva React-hoz
 - 7.0a - Tic-Tac-Toe minijáték hozzáadva React-hoz
@@ -31,3 +31,4 @@ Az oldal minden funkciót megkapott, kezdődhet az teljeskörű Alpha teszt!
 **Beta**
 
 - 1.0b - Az oldal teljesen megújult megjelenést kapott
+- 1.1b - Design reszelgetés
