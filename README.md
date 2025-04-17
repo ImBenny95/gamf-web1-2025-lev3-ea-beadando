@@ -23,4 +23,7 @@ Changelog:
 - 3.0a - ChartJS demo hozzáadva
 - 4.0a - AJAX demo hozzáadva - Érvényes NEPTUN kód szükséges a tanár szerverén!!
 - 5.0a - Objektum orientált Java alkalmazás hozzáadva - Kő Papír Olló minijáték :)
-- 6.0a - Első React minijáték hozzáadva
+- 6.0a - Első React minijáték hozzáadva React-hoz
+- 7.0a - Tic-Tac-Toe minijáték hozzáadva React-hoz
+
+Az oldal minden funkciót megkapott, kezdődhet az teleskörű Alpha teszt!
