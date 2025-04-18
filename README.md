@@ -2,6 +2,16 @@
 
 NJE-GAMF / Mérnökinformatikus Bsc / 2025 / WEB-programozás I. / Előadás beadandó
 
+A nevem Pál Bence és a Neumann János Egyetem 4. féléves hallgatója vagyok.
+
+Ezen demo segítségével szeretném bemutatni eddig megszerzett tudásom.
+Az oldalon látható menü segítségével tudsz navigálni a különböző HTML-en alapuló megoldások között.
+Minden oldal tartalmaz egy rövid leírást az adott funkcióról és annak használatáról.
+Köszönöm, hogy meglátogattad a projektemet! Ha bármilyen hibát tapasztalsz vagy tanácsod lenne,
+azt szívesen fogadom itt a GitHub-on!
+
+Demo: http://ghxxqa.szakdoga.net/web-prog-i-ea-beadando/
+
 Changelog:
 
 **Alpha**
